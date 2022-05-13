@@ -13,8 +13,14 @@
 </head>
 <body>
     
-    <div id="root"></div>
-    
+    <div id="root">
+        <ul v-if="rndEmails.length === 10">
+            <li v-for="mail in rndEmails">
+                {{ mail }}
+            </li>
+        </ul>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
